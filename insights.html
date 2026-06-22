@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights & Education | Rebel FX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; } /* Slate 900 */
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="text-slate-300 font-sans antialiased min-h-screen">
+
+    <nav class="p-6 flex justify-between items-center border-b border-white/5">
+        <div class="text-2xl font-bold text-white tracking-tighter">Rebel<span class="text-emerald-500">FX</span></div>
+        <a href="index.html" class="text-emerald-400 hover:text-emerald-300 text-sm font-medium">Back Home</a>
+    </nav>
+
+    <main class="max-w-3xl mx-auto p-6 mt-6">
+        <h1 class="text-3xl font-bold text-white mb-2">Rebel Knowledge Base</h1>
+        <p class="text-slate-400 mb-8">Master the mechanics of synthetic indices with zero guesswork.</p>
+
+        <div class="glass p-2 rounded-2xl space-y-2">
+            
+            <div class="border border-white/5 rounded-xl bg-slate-900/50 overflow-hidden">
+                <button class="accordion-btn w-full flex justify-between items-center p-5 text-slate-200 font-semibold text-left focus:outline-none transition-colors hover:bg-slate-800/50">
+                    What is a Fair Value Gap (FVG)?
+                    <span class="transform transition-transform duration-300 text-emerald-400 text-xl">▼</span>
+                </button>
+                <div class="accordion-content hidden px-5 pb-5 pt-2 text-sm text-slate-400 leading-relaxed border-t border-white/5">
+                    An FVG occurs when a sudden burst of buying or selling leaves a gap in the price action. In synthetic indices like V75, price often returns to these zones to rebalance before continuing its original trend.
+                </div>
+            </div>
+
+            <div class="border border-white/5 rounded-xl bg-slate-900/50 overflow-hidden">
+                <button class="accordion-btn w-full flex justify-between items-center p-5 text-slate-200 font-semibold text-left focus:outline-none transition-colors hover:bg-slate-800/50">
+                    How do Liquidity Sweeps work?
+                    <span class="transform transition-transform duration-300 text-emerald-400 text-xl">▼</span>
+                </button>
+                <div class="accordion-content hidden px-5 pb-5 pt-2 text-sm text-slate-400 leading-relaxed border-t border-white/5">
+                    Markets actively seek liquidity. A sweep happens when price pushes past obvious retail highs or lows to trigger stop-losses before rapidly reversing. We wait for these sweeps to enter trades alongside institutional momentum.
+                </div>
+            </div>
+
+            <div class="border border-white/5 rounded-xl bg-slate-900/50 overflow-hidden">
+                <button class="accordion-btn w-full flex justify-between items-center p-5 text-slate-200 font-semibold text-left focus:outline-none transition-colors hover:bg-slate-800/50">
+                    What is an Order Block (OB)?
+                    <span class="transform transition-transform duration-300 text-emerald-400 text-xl">▼</span>
+                </button>
+                <div class="accordion-content hidden px-5 pb-5 pt-2 text-sm text-slate-400 leading-relaxed border-t border-white/5">
+                    An Order Block is the last opposite-closing candle before a strong move that breaks market structure. It represents smart money accumulation or distribution, acting as a high-probability zone for our entries.
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion-btn');
+        
+        accordions.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Find the content div right below the clicked button
+                const content = this.nextElementSibling;
+                // Find the arrow icon inside the button
+                const icon = this.querySelector('span');
+                
+                // Toggle the 'hidden' class to show/hide text
+                content.classList.toggle('hidden');
+                
+                // Rotate the arrow icon 180 degrees when open
+                if (content.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
