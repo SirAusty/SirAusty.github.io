@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebel FX — Learn Forex the Right Way</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Space Grotesk & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f17;
+        }
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px rgba(255, 255, 255, 0.08) solid;
+        }
+        .neon-glow {
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+        }
+        .neon-glow-btn:hover {
+            box-shadow: 0 0 25px rgba(52, 211, 153, 0.5);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="text-slate-300 antialiased overflow-x-hidden">
+
+    <!-- Sticky Navbar -->
+    <nav class="sticky top-0 z-50 glass border-b border-white/5 w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="heading-font text-2xl font-bold text-white tracking-tight">Rebel<span class="text-emerald-400">FX</span></span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#roadmap" class="hover:text-emerald-400 transition-colors">Roadmap</a>
+                <a href="#brokers" class="hover:text-emerald-400 transition-colors">Brokers</a>
+                <a href="#tools" class="hover:text-emerald-400 transition-colors">Tools</a>
+                <a href="#blog" class="hover:text-emerald-400 transition-colors">Insights</a>
+            </div>
+            <div>
+                <a href="#roadmap" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-300 neon-glow-btn">Start Journey</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-20 md:pt-32 md:pb-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <!-- Ambient Background Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="inline-flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium px-3 py-1 rounded-full mb-6">
+            <span>🇿🇼 Built For Zimbabwean Traders</span>
+        </div>
+        
+        <h1 class="heading-font text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight max-w-4xl mx-auto leading-none">
+            Learn Forex the <span class="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Right Way</span> — Zero Guesswork
+        </h1>
+        
+        <p class="mt-6 text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            A complete beginner-to-intermediate trading education hub. Real brokers, professional market tools, and honest execution advice from active day traders.
+        </p>
+        
+        <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="#roadmap" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-8 py-4 rounded-xl transition-all duration-300 neon-glow-btn flex items-center justify-center space-x-2">
+                <span>Start Your Journey</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+            <a href="#brokers" class="w-full sm:w-auto glass text-white hover:bg-white/5 font-semibold px-8 py-4 rounded-xl transition-all duration-300 flex items-center justify-center">
+                Compare Brokers
+            </a>
+        </div>
+
+        <!-- Trust Stats Bar -->
+        <div class="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div class="glass p-6 rounded-2xl text-center">
+                <p class="heading-font text-3xl font-bold text-white mb-1">Free</p>
+                <p class="text-xs text-slate-400 tracking-wider uppercase">To Learn, Always</p>
+            </div>
+            <div class="glass p-6 rounded-2xl text-center border-emerald-500/20">
+                <p class="heading-font text-3xl font-bold text-emerald-400 mb-1">3+</p>
+                <p class="text-xs text-slate-400 tracking-wider uppercase">Zim-Friendly Brokers</p>
+            </div>
+            <div class="glass p-6 rounded-2xl text-center">
+                <p class="heading-font text-3xl font-bold text-white mb-1">VIX 75</p>
+                <p class="text-xs text-slate-400 tracking-wider uppercase">Specialist Mechanics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Guard Bar -->
+    <div class="border-y border-white/5 bg-white/[0.01] py-6">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center items-center gap-x-12 gap-y-4 text-xs font-medium text-slate-400 uppercase tracking-widest">
+            <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
+                <span>Active Volatility 75 Trader</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
+                <span>EcoCash & Bank Transfer Guides</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
+                <span>No Hype, No Fake Promises</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="heading-font text-3xl sm:text-4xl font-bold text-white tracking-tight">New to Trading? Start Here.</h2>
+            <p class="mt-4 text-slate-400">Follow these critical architectural steps in order. Each block builds directly on the layout of the last.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div class="glass p-8 rounded-2xl relative group hover:border-emerald-500/30 transition-all duration-300">
+                <div class="absolute top-6 right-8 heading-font text-5xl font-bold text-white/5 group-hover:text-emerald-500/10 transition-colors">01</div>
+                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded">30 Min Read</span>
+                <h3 class="heading-font text-xl font-bold text-white mt-4 mb-2">Understand Market Truths</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Learn what synthetic indices and currency liquidity frameworks actually represent, how execution models form, and legal dynamics in Zimbabwe.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="glass p-8 rounded-2xl relative group hover:border-emerald-500/30 transition-all duration-300">
+                <div class="absolute top-6 right-8 heading-font text-5xl font-bold text-white/5 group-hover:text-emerald-500/10 transition-colors">02</div>
+                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded">Interactive</span>
+                <h3 class="heading-font text-xl font-bold text-white mt-4 mb-2">Pick a Broker Gateway</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Not all institutions accept local funding channels easily. We map platforms natively compatible with domestic routing and local agents.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="glass p-8 rounded-2xl relative group hover:border-emerald-500/30 transition-all duration-300">
+                <div class="absolute top-6 right-8 heading-font text-5xl font-bold text-white/5 group-hover:text-emerald-500/10 transition-colors">03</div>
+                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded">Risk Free</span>
+                <h3 class="heading-font text-xl font-bold text-white mt-4 mb-2">Deploy Sandbox Frameworks</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Establish raw data testing environments. Log structural execution cycles completely inside zero-risk trial interfaces before deploying real capital.</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="glass p-8 rounded-2xl relative group hover:border-emerald-500/30 transition-all duration-300">
+                <div class="absolute top-6 right-8 heading-font text-5xl font-bold text-white/5 group-hover:text-emerald-500/10 transition-colors">04</div>
+                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded">Core Strategy</span>
+                <h3 class="heading-font text-xl font-bold text-white mt-4 mb-2">Master One Setup Model</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Isolate directional order flow mechanics. Lock absolute concentration parameters onto high-volatility conditions like VIX 75 index behaviors.</p>
+            </div>
+            <!-- Step 5 -->
+            <div class="glass p-8 rounded-2xl relative group hover:border-emerald-500/30 transition-all duration-300">
+                <div class="absolute top-6 right-8 heading-font text-5xl font-bold text-white/5 group-hover:text-emerald-500/10 transition-colors">05</div>
+                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded">Essential</span>
+                <h3 class="heading-font text-xl font-bold text-white mt-4 mb-2">Automate Risk Parameters</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Calculate exact micro-allocations dynamically. Structural math tools isolate drawdown risk matrixes cleanly across entire balance definitions.</p>
+            </div>
+            <!-- Step 6 -->
+            <div class="glass p-8 rounded-2xl relative group hover:border-emerald-500/30 transition-all duration-300">
+                <div class="absolute top-6 right-8 heading-font text-5xl font-bold text-white/5 group-hover:text-emerald-500/10 transition-colors">06</div>
+                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded">Live Scaling</span>
+                <h3 class="heading-font text-xl font-bold text-white mt-4 mb-2">Execute Microlot Cycles</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Transition cautiously into live environments. Step execution scaling metrics symmetrically alongside real performance tracking logs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Broker Section -->
+    <section id="brokers" class="py-24 border-t border-white/5 bg-white/[0.01] relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="heading-font text-3xl sm:text-4xl font-bold text-white tracking-tight">Brokers Built For Local Infrastructure</h2>
+                <p class="mt-4 text-slate-400">Vetted connection nodes engineered for stable deposits, predictable processing windows, and native MT5 alignment.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                <!-- Deriv -->
+                <div class="glass p-8 rounded-3xl border-emerald-500/30 relative flex flex-col justify-between neon-glow">
+                    <div class="absolute -top-3 right-6 bg-emerald-500 text-slate-950 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded-full">Top Pick</div>
+                    <div>
+                        <h3 class="heading-font text-2xl font-bold text-white">Deriv</h3>
+                        <p class="text-sm text-slate-400 mt-1">Synthetic Index Engine</p>
+                        <div class="my-6 border-b border-white/5 pb-4">
+                            <span class="text-xs uppercase tracking-wider text-emerald-400 font-semibold">Specialized Capability</span>
+                        </div>
+                        <ul class="space-y-4 text-sm text-slate-300 mb-8">
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>24/7 Volatility 75 (VIX) Availability</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Local Agent Deposit Support</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>$5 Minimum Entry Limit</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold py-3.5 rounded-xl text-center transition-all duration-300 block">Open Deriv Account</a>
+                </div>
+
+                <!-- Exness -->
+                <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-white/20 transition-all duration-300">
+                    <div>
+                        <h3 class="heading-font text-2xl font-bold text-white">Exness</h3>
+                        <p class="text-sm text-slate-400 mt-1">High Liquid Capital Gateway</p>
+                        <div class="my-6 border-b border-white/5 pb-4">
+                            <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Popular Standard</span>
+                        </div>
+                        <ul class="space-y-4 text-sm text-slate-300 mb-8">
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Ultra-Low Raw Spread Pipelines</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Bank Transfer Nodes Enabled</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Automated Processing Windows</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="w-full glass text-white hover:bg-white/5 font-semibold py-3.5 rounded-xl text-center transition-all duration-300 block">Open Exness Account</a>
+                </div>
+
+                <!-- XM -->
+                <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-white/20 transition-all duration-300">
+                    <div>
+                        <h3 class="heading-font text-2xl font-bold text-white">XM</h3>
+                        <p class="text-sm text-slate-400 mt-1">Execution Allocation Portal</p>
+                        <div class="my-6 border-b border-white/5 pb-4">
+                            <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Starter Friendly</span>
+                        </div>
+                        <ul class="space-y-4 text-sm text-slate-300 mb-8">
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Initial Account Incentives Matrix</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Micro-Lot Allocation Accounts</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Interactive Educational Webinars</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="w-full glass text-white hover:bg-white/5 font-semibold py-3.5 rounded-xl text-center transition-all duration-300 block">Open XM Account</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Interactive Engine Section -->
+    <section id="tools" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5">
+                <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full">Core Utilities</span>
+                <h2 class="heading-font text-3xl sm:text-4xl font-bold text-white mt-4 mb-6 tracking-tight">Mathematical Allocation Mechanics</h2>
+                <p class="text-slate-400 leading-relaxed mb-6"> Stop executing randomized matrix lot parameters. Utilize structural processing tools to calculate exact mathematical lot sizing parameters dynamically on every transaction loop.</p>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <div class="p-2 bg-white/5 rounded-lg text-emerald-400 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 11h.01M12 7h.01M15 11h.01M15 7h.01M18 21H6a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2v14a2 2 0 01-2 2z"></path></svg></div>
+                        <div>
+                            <h4 class="text-white font-medium">Position Size Calibration</h4>
+                            <p class="text-sm text-slate-400">Match active balance curves directly alongside point metrics instantly.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="p-2 bg-white/5 rounded-lg text-emerald-400 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg></div>
+                        <div>
+                            <h4 class="text-white font-medium">R:R Dynamic Matrices</h4>
+                            <p class="text-sm text-slate-400">Graph return properties accurately prior to committing manual market updates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Live Functioning Position Sizer Form Widget -->
+            <div class="lg:col-span-7 glass p-8 rounded-3xl relative">
+                <div class="absolute -top-3 -right-3 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                <h3 class="heading-font text-xl font-bold text-white mb-6 flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                    <span>Live Position Sizer Engine</span>
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-slate-400 tracking-wider mb-2">Account Balance ($)</label>
+                        <input type="number" id="balance" value="100" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-400 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-slate-400 tracking-wider mb-2">Risk Target (%)</label>
+                        <input type="number" id="risk" value="2" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-400 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-slate-400 tracking-wider mb-2">Stop Loss Distance (Pips/Points)</label>
+                        <input type="number" id="stoploss" value="20" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-400 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-slate-400 tracking-wider mb-2">Asset Parameters</label>
+                        <select class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-400 transition-colors">
+                            <option>Volatility 75 Index (VIX)</option>
+                            <option>Major Currency (EURUSD/GBPUSD)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-slate-950/60 border border-white/5 rounded-2xl p-6 flex items-center justify-between">
+                    <div>
+                        <p class="text-xs uppercase text-slate-400 font-semibold tracking-wider">Absolute Allowed Risk Amount</p>
+                        <p class="heading-font text-2xl font-bold text-emerald-400 mt-1" id="riskAmount">$2.00</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-xs uppercase text-slate-400 font-semibold tracking-wider">Calculated Sizing Limit</p>
+                        <p class="heading-font text-2xl font-bold text-white mt-1" id="lotSize">0.010 lot</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights / Blog Section -->
+    <section id="blog" class="py-24 border-t border-white/5 bg-white/[0.01]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <h2 class="heading-font text-3xl sm:text-4xl font-bold text-white tracking-tight">Operational Intelligence Logs</h2>
+                    <p class="mt-2 text-slate-400">Deep structural breakdown analyses updated sequentially across live macro cycles.</p>
+                </div>
+                <a href="#" class="mt-4 md:mt-0 inline-flex items-center space-x-2 text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors group">
+                    <span>View All Articles</span>
+                    <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="glass rounded-2xl overflow-hidden group hover:border-white/20 transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-4">
+                            <span>VIX Mechanics</span>
+                            <span>•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-white group-hover:text-emerald-300 transition-colors mb-3">Deconstructing Volatility 75 Engine Trends</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Analyzing mathematical volatility trends inside extended session matrix distributions without indicators.</p>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-white/5 mt-6 flex items-center justify-between text-xs text-slate-500 font-medium">
+                        <span>Structural Guide</span>
+                        <span>Updated Today</span>
+                    </div>
+                </article>
+                <!-- Article 2 -->
+                <article class="glass rounded-2xl overflow-hidden group hover:border-white/20 transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-4">
+                            <span>Macro Mechanics</span>
+                            <span>•</span>
+                            <span>8 min read</span>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-white group-hover:text-emerald-300 transition-colors mb-3">Is Forex Trading Legally Authorized Inside Zimbabwe?</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Breaking down cross-border exchange regulatory updates, explicit verification boundaries, and compliance models explicitly.</p>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-white/5 mt-6 flex items-center justify-between text-xs text-slate-500 font-medium">
+                        <span>Regulatory Log</span>
+                        <span>Yesterday</span>
+                    </div>
+                </article>
+                <!-- Article 3 -->
+                <article class="glass rounded-2xl overflow-hidden group hover:border-white/20 transition-all duration-300 flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-4">
+                            <span>Risk Mitigation</span>
+                            <span>•</span>
+                            <span>4 min read</span>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-white group-hover:text-emerald-300 transition-colors mb-3">Top Beginner Pitfalls Inside Real Capital Markets</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Why static position calculation failures cause massive liquidation matrix slips among raw retail market developers.</p>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-white/5 mt-6 flex items-center justify-between text-xs text-slate-500 font-medium">
+                        <span>Execution Safety</span>
+                        <span>2 Days Ago</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA / Outro Banner -->
+    <section class="py-20 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="glass rounded-3xl p-8 md:p-12 text-center relative overflow-hidden border-emerald-500/20 neon-glow">
+            <div class="absolute inset-0 bg-gradient-to-r from-emerald-500/5 via-transparent to-teal-500/5 pointer-events-none"></div>
+            <h2 class="heading-font text-3xl font-bold text-white tracking-tight">Ready to Initialize Absolute Strategy?</h2>
+            <p class="mt-4 text-slate-400 max-w-xl mx-auto text-sm sm:text-base">No hidden system fees. No premium access paywalls. Just standard, verified educational data frameworks deployed freely.</p>
+            <div class="mt-8">
+                <a href="#roadmap" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-8 py-4 rounded-xl transition-all duration-300 inline-block neon-glow-btn">Initialize Education Loop</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="border-t border-white/5 py-12 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <p class="heading-font text-base font-bold text-white mb-2">Rebel<span class="text-emerald-400">FX</span></p>
+                <p>© 2026 Rebel FX Architecture. Universal Rights Retained.</p>
+                <p class="mt-1 text-emerald-400/60 font-medium">Engineered natively within Zimbabwe 🇿🇼</p>
+            </div>
+            <div class="text-left md:text-right text-slate-600 leading-relaxed max-w-md md:ml-auto">
+                <span class="font-semibold text-slate-400 block mb-1 uppercase tracking-wider text-[10px]">High-Risk Matrix Disclosure:</span>
+                Trading secondary index contracts, leveraged financial derivatives, and volatility options markers carries high exposure liabilities. Settle verification procedures completely prior to processing live account entries. Never risk capital frameworks outside calculated parameters.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript Calculator Script for interactivity -->
+    <script>
+        const balanceInput = document.getElementById('balance');
+        const riskInput = document.getElementById('risk');
+        const stoplossInput = document.getElementById('stoploss');
+        
+        const riskAmountOutput = document.getElementById('riskAmount');
+        const lotSizeOutput = document.getElementById('lotSize');
+        
+        function calculatePosition() {
+            const balance = parseFloat(balanceInput.value) || 0;
+            const riskPercent = parseFloat(riskInput.value) || 0;
+            const stoploss = parseFloat(stoplossInput.value) || 1;
+            
+            const riskAmount = balance * (riskPercent / 100);
+            riskAmountOutput.textContent = '$' + riskAmount.toFixed(2);
+            
+            // Basic layout sizing engine approximation framework
+            const standardLotCalculation = riskAmount / (stoploss * 10);
+            lotSizeOutput.textContent = Math.max(standardLotCalculation, 0.001).toFixed(3) + ' lot';
+        }
+        
+        [balanceInput, riskInput, stoplossInput].forEach(element => {
+            element.addEventListener('input', calculatePosition);
+        });
+    </script>
+</body>
+</html>
