@@ -8,14 +8,11 @@
     <style>
         body { background-color: #0b0f17; }
         .glass {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
         }
-        /* Custom hide scrollbars for cleaner table viewports */
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="text-slate-300 font-sans antialiased min-h-screen overflow-x-hidden">
@@ -31,39 +28,47 @@
 
     <main class="max-w-4xl mx-auto p-6 mt-6">
         <div class="inline-flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs px-3 py-1 rounded-full mb-4">
-            <span>🇿🇼 Official Rebel FX Academy Portal</span>
+            <span>🇿🇼 Official Rebel FX Master Academy</span>
         </div>
-        <h1 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">Rebel Knowledge Base</h1>
-        <p class="text-slate-400 text-sm sm:text-base mb-8 max-w-2xl">Advanced technical systems, localized execution frameworks, and structural mechanics for synthetic indices. Zero hype. Just data.</p>
+        <h1 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">The Rebel One-Stop Knowledge Base</h1>
+        <p class="text-slate-400 text-sm sm:text-base mb-8 max-w-2xl">The complete manual for synthetic index execution. No hype, no chatroom theories. Just algorithmic mechanics, exact risk math, and localized payment protocols.</p>
 
-        <!-- MODULE 1: SMART MONEY CONCEPTS -->
-        <div class="mb-8">
-            <h2 class="text-xs font-semibold tracking-wider text-emerald-400 uppercase mb-4">Module 1: Smart Money Concepts (SMC)</h2>
-            <div class="glass rounded-2xl p-2 space-y-2">
+        <div class="mb-10">
+            <h2 class="text-xs font-semibold tracking-wider text-emerald-400 uppercase mb-4">Module 1: Advanced Smart Money Concepts (SMC)</h2>
+            <div class="glass rounded-2xl p-3 space-y-3">
                 
                 <div class="border border-white/5 rounded-xl bg-slate-900/40 overflow-hidden">
                     <button class="accordion-btn w-full flex justify-between items-center p-5 text-slate-200 font-semibold text-left transition-colors hover:bg-slate-800/30">
-                        <span>1.1 Market Structure Shifts & Order Blocks</span>
+                        <span>1.1 Market Structure Shifts (MSS) & Institutional Order Blocks</span>
                         <span class="transform transition-transform duration-300 text-emerald-400 text-base">▼</span>
                     </button>
-                    <div class="accordion-content hidden px-5 pb-5 pt-2 text-sm text-slate-400 leading-relaxed border-t border-white/5 space-y-3">
-                        <p>An <strong class="text-white">Order Block (OB)</strong> represents the last opposite candle before an institutional displacement of price that breaks structural points (BOS/CHoCH).</p>
-                        <ul class="list-disc list-inside space-y-1 bg-slate-950/40 p-3 rounded-lg border border-white/5">
-                            <li><span class="text-emerald-400 font-medium">Bullish OB:</span> Lowest down-close candle prior to an upward break.</li>
-                            <li><span class="text-rose-400 font-medium">Bearish OB:</span> Highest up-close candle prior to a downward break.</li>
-                        </ul>
-                        <p>We target the open or 50% equilibrium level of the block for precision entries, keeping invalidation points tight directly beyond the block's tail.</p>
+                    <div class="accordion-content hidden px-5 pb-5 pt-2 text-sm text-slate-400 leading-relaxed border-t border-white/5 space-y-4">
+                        <p>An <strong class="text-white">Order Block (OB)</strong> is not just a regular "support or resistance" zone. It represents a specific price level where commercial trading algorithms have flooded the market with heavy institutional volume, creating a massive imbalance.</p>
+                        
+                        <div class="space-y-3 bg-slate-950/50 p-4 rounded-xl border border-white/5">
+                            <span class="text-white font-medium block">The Invalidation & Setup Protocol:</span>
+                            <p><strong class="text-emerald-400">1. The Structural Shift:</strong> Price must cleanly break a recent swing high or low with strong momentum. This is your Market Structure Shift (MSS) or Change of Character (CHoCH).</p>
+                            <p><strong class="text-emerald-400">2. Identifying the Block:</strong> Locate the final opposite candle right before that heavy displacement started.</p>
+                            <p><strong class="text-emerald-400">3. Execution Engine:</strong> Set limit orders at the opening price of that candle, or at the 50% equilibrium level (Mean Threshold) for an ultra-tight entry configuration.</p>
+                        </div>
+                        <p>If a candle body closes completely past the invalidation level (the opposite tail of the block), the setup is completely voided. This rule guarantees you keep your losses microscopic while aiming for clean structural extensions.</p>
                     </div>
                 </div>
 
                 <div class="border border-white/5 rounded-xl bg-slate-900/40 overflow-hidden">
                     <button class="accordion-btn w-full flex justify-between items-center p-5 text-slate-200 font-semibold text-left transition-colors hover:bg-slate-800/30">
-                        <span>1.2 Fair Value Gaps & Liquidity Pools</span>
+                        <span>1.2 Fair Value Gaps (FVG) & Internal Liquidity Engineering</span>
                         <span class="transform transition-transform duration-300 text-emerald-400 text-base">▼</span>
                     </button>
-                    <div class="accordion-content hidden px-5 pb-5 pt-2 text-sm text-slate-400 leading-relaxed border-t border-white/5 space-y-3">
-                        <p>A <strong class="text-white">Fair Value Gap (FVG)</strong> is a 3-candle structural imbalance. It exists when the wick of Candle 1 and the wick of Candle 3 do not overlap, leaving an imbalance in Candle 2.</p>
-                        <p>Algorithms return to these gaps to deliver fair pricing. Stacking entries inside an FVG correlated with discount/premium zones offers exceptional risk-to-reward parameters.</p>
+                    <div class="accordion-content hidden px-5 pb-5 pt-2 text-sm text-slate-400 leading-relaxed border-t border-white/5 space-y-4">
+                        <p>A <strong class="text-white">Fair Value Gap (FVG)</strong> represents a clear price delivery imbalance left behind by the matching engine algorithm during highly aggressive market extensions. It is visually mapped across a strict 3-candle sequence.</p>
+                        
+                        <div class="p-4 bg-slate-950/40 rounded-xl border border-white/5 space-y-2">
+                            <span class="text-white font-medium block">The 3-Candle Blueprint:</span>
+                            <p>An imbalance occurs when the low of Candle 1 and the high of Candle 3 fail to meet or overlap. The wide, open space remaining inside the body of Candle 2 forms the FVG footprint.</p>
+                        </div>
+                        
+                        <p>Because these algorithms are mathematically programmed to maintain perfectly efficient price delivery, the market will almost always trace back into these voids to "rebalance" pricing inefficiencies. The highest-probability setups materialize when an FVG directly overlaps with a discount premium zone, acting as a magnet for precise institutional re-entries.</p>
                     </div>
                 </div>
 
@@ -72,57 +77,122 @@
                         <span>1.3 Boom & Crash Spikes: The Stop-Loss Blind Spot</span>
                         <span class="transform transition-transform duration-300 text-rose-400 text-base">▼</span>
                     </button>
-                    <div class="accordion-content hidden px-5 pb-5 pt-2 text-sm text-slate-400 leading-relaxed border-t border-white/5 space-y-3">
-                        <p>Boom indices spike instantly upward; Crash indices drop instantly downward. These movements happen within a single tick, creating a structural anomaly unique to synthetics.</p>
-                        <div class="bg-rose-950/30 border border-rose-500/20 text-rose-300 p-4 rounded-lg space-y-2">
-                            <span class="font-bold block text-rose-400">⚠️ CRITICAL RISK WARNING:</span>
-                            <p>Standard Stop-Loss orders **do not trigger** inside an active spike. If a Crash index drops violently past your stop loss, the algorithm bypasses your order and executes your close at the absolute bottom tip of the spike. Always adjust your risk percentage lower on Boom/Crash to account for potential slippage.</p>
+                    <div class="accordion-content hidden px-5 pb-5 pt-2 text-sm text-slate-400 leading-relaxed border-t border-white/5 space-y-4">
+                        <p>Boom and Crash indices function on specialized algorithmic logic. Boom assets generate massive, immediate vertical moves upward, while Crash assets generate sudden, aggressive vertical drops downward. Outside of these rapid movements, the market moves in quiet, systematic 1-second ticks.</p>
+                        
+                        <div class="bg-rose-950/30 border border-rose-500/20 text-rose-300 p-4 rounded-lg space-y-3">
+                            <span class="font-bold block text-rose-400 text-base">⚠️ THE SLIPPAGE REALITY WARNING:</span>
+                            <p>Standard Stop-Loss (SL) commands **cannot protect you** if they are placed directly in the path of a counter-trend spike. The algorithm does not process prices sequentially during a spike event; it jumps instantly from the base to the top of the move within a single tick.</p>
+                            <p>If you are running a Sell position on Boom 1000 with a stop-loss set midway, and a spike jumps past it, your stop-loss will fail to trigger at its exact target. Your trade will instead close at the next available tick at the absolute tip of the spike. To manage this safely, you must decrease your base lot sizes on Boom/Crash to absorb sudden slippage without damaging your account balance.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- MODULE 2: SYNTHETIC INDEX MECHANICS -->
-        <div class="mb-8">
-            <h2 class="text-xs font-semibold tracking-wider text-emerald-400 uppercase mb-4">Module 2: Synthetic Index Mechanics</h2>
-            <div class="glass rounded-2xl p-2 space-y-2">
+        <div class="mb-10">
+            <h2 class="text-xs font-semibold tracking-wider text-emerald-400 uppercase mb-4">Module 2: Complete Synthetic Index Mechanics</h2>
+            <div class="glass rounded-2xl p-3 space-y-3">
                 
                 <div class="border border-white/5 rounded-xl bg-slate-900/40 overflow-hidden">
                     <button class="accordion-btn w-full flex justify-between items-center p-5 text-slate-200 font-semibold text-left transition-colors hover:bg-slate-800/30">
-                        <span>2.1 Complete Asset Specifications (9 Core Instruments)</span>
+                        <span>2.1 Complete Specifications (9 Master Instruments)</span>
                         <span class="transform transition-transform duration-300 text-emerald-400 text-base">▼</span>
                     </button>
                     <div class="accordion-content hidden px-5 pb-5 pt-2 text-sm text-slate-400 leading-relaxed border-t border-white/5 space-y-4">
-                        <p>Deriv's assets utilize a static <strong class="text-white">Contract Size of 1</strong>. One full point of movement equals exactly <strong class="text-white">$1.00 USD</strong> per standard lot volume. Reference this master technical framework:</p>
+                        <p>Unlike traditional currency pairs, synthetic index assets utilize a fixed **Contract Size of 1**. This framework significantly simplifies your risk modeling calculations: **1 full point of price movement corresponds to exactly $1.00 USD of account equity change per standard 1.0 lot volume.**</p>
                         
-                        <div class="overflow-x-auto rounded-lg border border-white/5 no-scrollbar">
+                        <div class="overflow-x-auto rounded-lg border border-white/5">
                             <table class="w-full text-left border-collapse bg-slate-950/60 text-xs">
                                 <thead>
                                     <tr class="border-b border-white/10 bg-slate-900 text-slate-300 font-medium">
-                                        <th class="p-3">Asset Instrument</th>
-                                        <th class="p-3">Min Lot Size</th>
+                                        <th class="p-3">Instrument Asset</th>
+                                        <th class="p-3">Minimum Lot</th>
                                         <th class="p-3">Point Step (Tick Size)</th>
-                                        <th class="p-3">Value of 1 Lot / Point Move</th>
+                                        <th class="p-3">Risk Per 1 Point Move</th>
                                     </tr>
                                 </thead>
-                                <tbody class="divide-y divide-white/5 text-slate-400">
-                                    <tr class="hover:bg-white/5 transition-colors">
-                                        <td class="p-3 font-medium text-white">Volatility 75 (V75)</td>
-                                        <td class="p-3">0.001</td>
-                                        <td class="p-3">0.0001</td>
-                                        <td class="p-3 text-emerald-400">$1.00 USD</td>
-                                    </tr>
-                                    <tr class="hover:bg-white/5 transition-colors">
-                                        <td class="p-3 font-medium text-white">Volatility 75 (1s)</td>
-                                        <td class="p-3">0.050</td>
-                                        <td class="p-3">0.0100</td>
-                                        <td class="p-3 text-emerald-400">$1.00 USD</td>
-                                    </tr>
-                                    <tr class="hover:bg-white/5 transition-colors">
-                                        <td class="p-3 font-medium text-white">Volatility 100</td>
-                                        <td class="p-3">0.500</td>
-                                        <td class="p-3">0.0100</td>
-                                        <td class="p-3 text-emerald-400">$1.00 USD</td>
-                                    </tr>
-                                    <tr class="hover:bg-white/5 transition-colors">
+                                <tbody class="divide-y divide-white/5 font-mono">
+                                    <tr><td class="p-3 text-white font-sans">Volatility 75</td><td class="p-3 text-emerald-400">0.001</td><td class="p-3">0.0001</td><td class="p-3">$1.00 USD at 1.0 Lot</td></tr>
+                                    <tr><td class="p-3 text-white font-sans">Volatility 75 (1s)</td><td class="p-3 text-emerald-400">0.05</td><td class="p-3">0.0100</td><td class="p-3">$1.00 USD at 1.0 Lot</td></tr>
+                                    <tr><td class="p-3 text-white font-sans">Volatility 100</td><td class="p-3 text-emerald-400">0.50</td><td class="p-3">0.0100</td><td class="p-3">$1.00 USD at 1.0 Lot</td></tr>
+                                    <tr><td class="p-3 text-white font-sans">Volatility 100 (1s)</td><td class="p-3 text-emerald-400">0.20</td><td class="p-3">0.0100</td><td class="p-3">$1.00 USD at 1.0 Lot</td></tr>
+                                    <tr><td class="p-3 text-white font-sans">Boom / Crash 1000</td><td class="p-3 text-emerald-400">0.20</td><td class="p-3">0.0001</td><td class="p-3">$1.00 USD at 1.0 Lot</td></tr>
+                                    <tr><td class="p-3 text-white font-sans">Boom / Crash 500</td><td class="p-3 text-emerald-400">0.20</td><td class="p-3">0.0010</td><td class="p-3">$1.00 USD at 1.0 Lot</td></tr>
+                                    <tr><td class="p-3 text-white font-sans">Boom / Crash 300</td><td class="p-3 text-emerald-400">1.00 / 0.50</td><td class="p-3">0.0010</td><td class="p-3">$1.00 USD at 1.0 Lot</td></tr>
+                                    <tr><td class="p-3 text-white font-sans">Step Index</td><td class="p-3 text-emerald-400">0.10</td><td class="p-3">0.1000</td><td class="p-3">$1.00 USD at 1.0 Lot</td></tr>
+                                    <tr><td class="p-3 text-white font-sans">Range Break 100 / 200</td><td class="p-3 text-emerald-400">0.01</td><td class="p-3">0.0010</td><td class="p-3">$1.00 USD at 1.0 Lot</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-white/5 rounded-xl bg-slate-900/40 overflow-hidden">
+                    <button class="accordion-btn w-full flex justify-between items-center p-5 text-slate-200 font-semibold text-left transition-colors hover:bg-slate-800/30">
+                        <span>2.2 Leverage Architecture & Margin Mechanics</span>
+                        <span class="transform transition-transform duration-300 text-emerald-400 text-base">▼</span>
+                    </button>
+                    <div class="accordion-content hidden px-5 pb-5 pt-2 text-sm text-slate-400 leading-relaxed border-t border-white/5 space-y-4">
+                        <p>Deriv's server network offers up to <strong class="text-white">1:1000 leverage</strong> on synthetic MT5 accounts. Leverage lets you control larger positions with a fraction of the actual capital, but you must know exactly how your margin requirements are calculated to avoid a sudden stop-out.</p>
+                        
+                        <div class="bg-slate-950/50 p-4 rounded-xl border border-white/5 space-y-2">
+                            <span class="text-white font-mono text-xs block text-center">Margin Required = (Volume × Current Asset Price) / Leverage</span>
+                        </div>
+                        
+                        <p>If you enter a 0.10 position size on an index priced at $500,000 using 1:1000 leverage, your locked margin requirement is exactly $50.00. If your free margin drops below the broker's minimum threshold due to floating drawdown, the server will trigger an automatic margin call, closing your active positions instantly to protect its own liquidity pools.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-10">
+            <h2 class="text-xs font-semibold tracking-wider text-emerald-400 uppercase mb-4">Module 3: Zimbabwean Operational Funding Protocols</h2>
+            <div class="glass rounded-2xl p-3 space-y-3">
+                
+                <div class="border border-white/5 rounded-xl bg-slate-900/40 overflow-hidden">
+                    <button class="accordion-btn w-full flex justify-between items-center p-5 text-slate-200 font-semibold text-left transition-colors hover:bg-slate-800/30">
+                        <span>3.1 EcoCash, Mukuru, ZIPIT & Payment Agent Protection Rules</span>
+                        <span class="transform transition-transform duration-300 text-emerald-400 text-base">▼</span>
+                    </button>
+                    <div class="accordion-content hidden px-5 pb-5 pt-2 text-sm text-slate-400 leading-relaxed border-t border-white/5 space-y-4">
+                        <p>Funding and withdrawing capital efficiently within Zimbabwe requires strict adherence to secure transfer protocols. Because traditional local banks face external card restrictions, retail traders utilize localized payment routing options:</p>
+                        
+                        <div class="space-y-4">
+                            <div class="p-4 bg-slate-950/40 rounded-xl border border-white/5 border-l-2 border-l-amber-500 space-y-2">
+                                <span class="text-white font-semibold block text-amber-400">🛡️ The Payment Agent Verification Protocol</span>
+                                <p class="text-xs">Scammers frequently set up fake profiles on WhatsApp and Telegram, cloning the names and pictures of real, trusted Payment Agents. To stay safe, you must follow this exact rule:</p>
+                                <p class="text-xs font-medium text-slate-300">Never send local USD cash, EcoCash, or inner-bank ZIPIT funds to an agent until you have cross-referenced and confirmed their specific unique Agent ID directly inside the official Deriv Cashier Panel under the "Payment Agents" section.</p>
+                            </div>
+                            
+                            <div class="p-4 bg-slate-950/40 rounded-xl border border-white/5 border-l-2 border-l-emerald-500 space-y-2">
+                                <span class="text-white font-semibold block text-emerald-400">⚡ Decoupled Crypto Networks (LTC & USDT)</span>
+                                <p class="text-xs">Utilizing Litecoin (LTC) or TRC-20 USDT completely bypasses banking delays and domestic network blackouts with minimal transaction fees. However, you must always double-check the deposit minimums shown inside the cashier menu before initiating an on-chain transfer. Sending an amount below this threshold will result in your funds being permanently lost on the blockchain.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion-btn');
+        
+        accordions.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('span:last-child');
+                
+                content.classList.toggle('hidden');
+                
+                if (content.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
