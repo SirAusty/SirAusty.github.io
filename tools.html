@@ -34,7 +34,7 @@
                 <p class="text-sm text-slate-400 mb-4">Trade data processing and analysis.</p>
                 <a href="https://t.me/projectrebel_bot" target="_blank" class="block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-lg text-center transition-all">Launch Bot</a>
                 <div class="glass p-6 rounded-2xl mt-8">
-    <h2 class="text-white font-bold text-xl mb-4">Synthetic Index Risk Calculator</h2>
+    <h2 class="text-white font-bold text-xl mb-4">Trade Planner & R:R</h2>
     <div class="space-y-4">
         <div>
             <label class="text-xs text-slate-400">Select Asset</label>
@@ -59,9 +59,20 @@
             <label class="text-xs text-slate-400">Stop Loss in Points</label>
             <input id="stoploss" type="number" class="w-full bg-slate-900 border border-white/10 rounded-lg p-3 text-white" placeholder="100">
         </div>
-        <div class="pt-4 border-t border-white/10">
-            <p class="text-sm text-slate-300">Max Loss: <span id="riskAmount" class="text-emerald-400 font-bold">$0.00</span></p>
-            <p class="text-sm text-slate-300">Calculated Lot Size: <span id="lotSize" class="text-emerald-400 font-bold">0.000</span></p>
+        
+        <div class="pt-4 border-t border-white/10 space-y-2">
+            <p class="text-sm text-slate-300">Max Loss: <span id="riskAmount" class="text-rose-400 font-bold">$0.00</span></p>
+            <p class="text-sm text-slate-300">Lot Size: <span id="lotSize" class="text-emerald-400 font-bold">0.000</span></p>
+            <div class="grid grid-cols-2 gap-2 pt-2">
+                <div class="bg-emerald-900/20 p-2 rounded border border-emerald-500/20 text-center">
+                    <p class="text-[10px] text-emerald-400 uppercase">TP (1:2)</p>
+                    <p id="tp1" class="text-white font-bold">$0.00</p>
+                </div>
+                <div class="bg-emerald-900/20 p-2 rounded border border-emerald-500/20 text-center">
+                    <p class="text-[10px] text-emerald-400 uppercase">TP (1:3)</p>
+                    <p id="tp2" class="text-white font-bold">$0.00</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -71,19 +82,24 @@
     const riskInput = document.getElementById('risk');
     const stoplossInput = document.getElementById('stoploss');
     
-    function calculateLot() {
+    function calculateTrade() {
         const balance = parseFloat(balanceInput.value) || 0;
         const riskPercent = parseFloat(riskInput.value) || 0;
         const slPoints = parseFloat(stoplossInput.value) || 1;
         
-        // Formula: Risk Amount = Balance * (Risk% / 100)
         const riskAmount = balance * (riskPercent / 100);
         document.getElementById('riskAmount').textContent = '$' + riskAmount.toFixed(2);
         
-        // Formula: Lot = Risk Amount / SL Points (Since Contract Size is 1)
         const lotSize = riskAmount / slPoints;
         document.getElementById('lotSize').textContent = Math.max(lotSize, 0.001).toFixed(3);
+        
+        // Calculate Profit Targets
+        document.getElementById('tp1').textContent = '$' + (riskAmount * 2).toFixed(2);
+        document.getElementById('tp2').textContent = '$' + (riskAmount * 3).toFixed(2);
     }
+
+    [balanceInput, riskInput, stoplossInput].forEach(el => el.addEventListener('input', calculateTrade));
+</script>
 
     [balanceInput, riskInput, stoplossInput].forEach(el => el.addEventListener('input', calculateLot));
 </script>
