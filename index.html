@@ -34,22 +34,36 @@
 </head>
 <body class="text-slate-300 antialiased overflow-x-hidden">
 
-    <nav class="sticky top-0 z-50 glass border-b border-white/5 w-full">
+        <nav class="sticky top-0 z-50 glass border-b border-white/5 w-full">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center space-x-2">
                 <span class="heading-font text-2xl font-bold text-white tracking-tight">Rebel<span class="text-emerald-400">FX</span></span>
             </div>
-            <div class="flex items-center space-x-4 text-sm font-medium">
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
                 <a href="#roadmap" class="hover:text-emerald-400 transition-colors">Roadmap</a>
                 <a href="#brokers" class="hover:text-emerald-400 transition-colors">Brokers</a>
                 <a href="tools.html" class="hover:text-emerald-400 transition-colors">Tools</a>
                 <a href="#blog" class="hover:text-emerald-400 transition-colors">Insights</a>
             </div>
-            <div>
+
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+
+            <div class="hidden md:block">
                 <a href="#roadmap" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-300 neon-glow-btn">Start Journey</a>
             </div>
         </div>
+
+        <div id="mobile-menu" class="hidden md:hidden glass border-t border-white/5 p-4 space-y-4 text-center text-sm font-medium text-slate-300">
+            <a href="#roadmap" class="block hover:text-emerald-400">Roadmap</a>
+            <a href="#brokers" class="block hover:text-emerald-400">Brokers</a>
+            <a href="tools.html" class="block hover:text-emerald-400">Tools</a>
+            <a href="#blog" class="block hover:text-emerald-400">Insights</a>
+        </div>
     </nav>
+
 
     <section class="relative pt-24 pb-20 md:pt-32 md:pb-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
@@ -421,11 +435,18 @@
         </div>
     </footer>
 
-    <script>
+        <script>
+        // Hamburger Menu Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Position Sizer Logic
         const balanceInput = document.getElementById('balance');
         const riskInput = document.getElementById('risk');
         const stoplossInput = document.getElementById('stoploss');
-        
         const riskAmountOutput = document.getElementById('riskAmount');
         const lotSizeOutput = document.getElementById('lotSize');
         
@@ -437,7 +458,6 @@
             const riskAmount = balance * (riskPercent / 100);
             riskAmountOutput.textContent = '$' + riskAmount.toFixed(2);
             
-            // Basic layout sizing engine approximation framework
             const standardLotCalculation = riskAmount / (stoploss * 10);
             lotSizeOutput.textContent = Math.max(standardLotCalculation, 0.001).toFixed(3) + ' lot';
         }
