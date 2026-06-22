@@ -33,6 +33,61 @@
                 <h3 class="text-xl font-bold text-white mb-2">Sentinel Bot</h3>
                 <p class="text-sm text-slate-400 mb-4">Trade data processing and analysis.</p>
                 <a href="https://t.me/projectrebel_bot" target="_blank" class="block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-lg text-center transition-all">Launch Bot</a>
+                <div class="glass p-6 rounded-2xl mt-8">
+    <h2 class="text-white font-bold text-xl mb-4">Synthetic Index Risk Calculator</h2>
+    <div class="space-y-4">
+        <div>
+            <label class="text-xs text-slate-400">Select Asset</label>
+            <select id="assetSelect" class="w-full bg-slate-900 border border-white/10 rounded-lg p-3 text-white">
+                <option value="1">Volatility 75</option>
+                <option value="1">Volatility 75 (1s)</option>
+                <option value="1">Step Index</option>
+                <option value="1">Boom 1000 / Crash 1000</option>
+            </select>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <label class="text-xs text-slate-400">Balance ($)</label>
+                <input id="balance" type="number" class="w-full bg-slate-900 border border-white/10 rounded-lg p-3 text-white" placeholder="100">
+            </div>
+            <div>
+                <label class="text-xs text-slate-400">Risk (%)</label>
+                <input id="risk" type="number" class="w-full bg-slate-900 border border-white/10 rounded-lg p-3 text-white" placeholder="1">
+            </div>
+        </div>
+        <div>
+            <label class="text-xs text-slate-400">Stop Loss in Points</label>
+            <input id="stoploss" type="number" class="w-full bg-slate-900 border border-white/10 rounded-lg p-3 text-white" placeholder="100">
+        </div>
+        <div class="pt-4 border-t border-white/10">
+            <p class="text-sm text-slate-300">Max Loss: <span id="riskAmount" class="text-emerald-400 font-bold">$0.00</span></p>
+            <p class="text-sm text-slate-300">Calculated Lot Size: <span id="lotSize" class="text-emerald-400 font-bold">0.000</span></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const balanceInput = document.getElementById('balance');
+    const riskInput = document.getElementById('risk');
+    const stoplossInput = document.getElementById('stoploss');
+    
+    function calculateLot() {
+        const balance = parseFloat(balanceInput.value) || 0;
+        const riskPercent = parseFloat(riskInput.value) || 0;
+        const slPoints = parseFloat(stoplossInput.value) || 1;
+        
+        // Formula: Risk Amount = Balance * (Risk% / 100)
+        const riskAmount = balance * (riskPercent / 100);
+        document.getElementById('riskAmount').textContent = '$' + riskAmount.toFixed(2);
+        
+        // Formula: Lot = Risk Amount / SL Points (Since Contract Size is 1)
+        const lotSize = riskAmount / slPoints;
+        document.getElementById('lotSize').textContent = Math.max(lotSize, 0.001).toFixed(3);
+    }
+
+    [balanceInput, riskInput, stoplossInput].forEach(el => el.addEventListener('input', calculateLot));
+</script>
+
             </div>
         </div>
     </main>
