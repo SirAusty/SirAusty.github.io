@@ -172,7 +172,6 @@
             </div>
         </div>
     </section>
-
     <section id="brokers" class="py-24 border-t border-white/5 bg-white/[0.01] relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -181,109 +180,156 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
-                <div class="glass p-8 rounded-3xl border-emerald-500/30 relative flex flex-col justify-between neon-glow">
-                    <div class="absolute -top-3 right-6 bg-emerald-500 text-slate-950 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded-full">Top Pick</div>
+                
+                <div class="glass p-6 rounded-3xl border-emerald-500/30 relative flex flex-col justify-between neon-glow">
+                    <div class="absolute -top-3 right-6 bg-emerald-500 text-slate-950 font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">Top Pick</div>
                     <div>
                         <h3 class="heading-font text-2xl font-bold text-white">Deriv</h3>
-                        <p class="text-sm text-slate-400 mt-1">Synthetic Index Engine</p>
-                        <div class="my-6 border-b border-white/5 pb-4">
-                            <span class="text-xs uppercase tracking-wider text-emerald-400 font-semibold">Specialized Capability</span>
-                        </div>
-                        <ul class="space-y-4 text-sm text-slate-300 mb-8">
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>24/7 Volatility 75 (VIX) Availability</span>
+                        <p class="text-xs text-slate-400 mt-1">Synthetic Index Engine</p>
+                        <div class="my-4 border-b border-white/5 pb-2"></div>
+                        <ul class="space-y-3 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center space-x-2">
+                                <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>24/7 Volatility (VIX) Indices</span>
                             </li>
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Local Agent Deposit Support</span>
-                            </li>
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>$5 Minimum Entry Limit</span>
+                            <li class="flex items-center space-x-2">
+                                <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Local Agent Support</span>
                             </li>
                         </ul>
                     </div>
-                    <a href="https://track.deriv.com/_LLzJNOnWme39rmqqnEu8NmNd7ZgqdRLk/1/" target="_blank" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold py-3.5 rounded-xl text-center transition-all duration-300 block">Open Deriv Account</a>
+                    <div class="space-y-2">
+                        <button onclick="toggleModal('deriv-modal')" class="w-full bg-white/5 hover:bg-white/10 text-white text-xs font-semibold py-2.5 rounded-xl text-center border border-white/10 transition-all duration-300">Review Broker Specs</button>
+                        <a href="https://track.deriv.com/_LLzJNOnWme39rmqqnEu8NmNd7ZgqdRLk/1/" target="_blank" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-bold py-2.5 rounded-xl text-center transition-all duration-300 block">Open Account</a>
+                    </div>
                 </div>
 
-                <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-white/20 transition-all duration-300">
+                <div class="glass p-6 rounded-3xl flex flex-col justify-between hover:border-white/20 transition-all duration-300">
                     <div>
                         <h3 class="heading-font text-2xl font-bold text-white">Exness</h3>
-                        <p class="text-sm text-slate-400 mt-1">High Liquid Capital Gateway</p>
-                        <div class="my-6 border-b border-white/5 pb-4">
-                            <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Popular Standard</span>
-                        </div>
-                        <ul class="space-y-4 text-sm text-slate-300 mb-8">
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Ultra-Low Raw Spread Pipelines</span>
+                        <p class="text-xs text-slate-400 mt-1">High Liquid Capital Gateway</p>
+                        <div class="my-4 border-b border-white/5 pb-2"></div>
+                        <ul class="space-y-3 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center space-x-2">
+                                <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Ultra-Low Raw Spreads</span>
                             </li>
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Bank Transfer Nodes Enabled</span>
-                            </li>
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Automated Processing Windows</span>
+                            <li class="flex items-center space-x-2">
+                                <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Automated Payout Nodes</span>
                             </li>
                         </ul>
                     </div>
-                    <a href="https://one.exnessonelink.com/a/w1wvy8o2f7?source=app&platform=mobile&pid=mobile_share" target="_blank" class="w-full glass text-white hover:bg-white/5 font-semibold py-3.5 rounded-xl text-center transition-all duration-300 block">Open Exness Account</a>
+                    <div class="space-y-2">
+                        <button onclick="toggleModal('exness-modal')" class="w-full bg-white/5 hover:bg-white/10 text-white text-xs font-semibold py-2.5 rounded-xl text-center border border-white/10 transition-all duration-300">Review Broker Specs</button>
+                        <a href="https://one.exnessonelink.com/a/w1wvy8o2f7?source=app&platform=mobile&pid=mobile_share" target="_blank" class="w-full glass text-white text-xs font-bold py-2.5 rounded-xl text-center transition-all duration-300 block">Open Account</a>
+                    </div>
                 </div>
 
-                <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-white/20 transition-all duration-300">
+                <div class="glass p-6 rounded-3xl flex flex-col justify-between hover:border-white/20 transition-all duration-300">
                     <div>
                         <h3 class="heading-font text-2xl font-bold text-white">XM</h3>
-                        <p class="text-sm text-slate-400 mt-1">Execution Allocation Portal</p>
-                        <div class="my-6 border-b border-white/5 pb-4">
-                            <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Starter Friendly</span>
-                        </div>
-                        <ul class="space-y-4 text-sm text-slate-300 mb-8">
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Initial Account Incentives Matrix</span>
+                        <p class="text-xs text-slate-400 mt-1">Execution Allocation Portal</p>
+                        <div class="my-4 border-b border-white/5 pb-2"></div>
+                        <ul class="space-y-3 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center space-x-2">
+                                <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Incentive Reward Schemes</span>
                             </li>
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Micro-Lot Allocation Accounts</span>
-                            </li>
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Interactive Educational Webinars</span>
+                            <li class="flex items-center space-x-2">
+                                <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Micro-Allocation Lots</span>
                             </li>
                         </ul>
                     </div>
-                    <a href="YOUR_XM_AFFILIATE_LINK_HERE" target="_blank" class="w-full glass text-white hover:bg-white/5 font-semibold py-3.5 rounded-xl text-center transition-all duration-300 block">Open XM Account</a>
+                    <div class="space-y-2">
+                        <button onclick="toggleModal('xm-modal')" class="w-full bg-white/5 hover:bg-white/10 text-white text-xs font-semibold py-2.5 rounded-xl text-center border border-white/10 transition-all duration-300">Review Broker Specs</button>
+                        <a href="YOUR_XM_AFFILIATE_LINK_HERE" target="_blank" class="w-full glass text-white text-xs font-bold py-2.5 rounded-xl text-center transition-all duration-300 block">Open Account</a>
+                    </div>
                 </div>
 
-                <div class="glass p-8 rounded-3xl flex flex-col justify-between hover:border-white/20 transition-all duration-300">
+                <div class="glass p-6 rounded-3xl flex flex-col justify-between hover:border-white/20 transition-all duration-300">
                     <div>
                         <h3 class="heading-font text-2xl font-bold text-white">Weltrade</h3>
-                        <p class="text-sm text-slate-400 mt-1">Low Minimum Deposit Broker</p>
-                        <div class="my-6 border-b border-white/5 pb-4">
-                            <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Flexible Trading</span>
-                        </div>
-                        <ul class="space-y-4 text-sm text-slate-300 mb-8">
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Deposits from $1</span>
+                        <p class="text-xs text-slate-400 mt-1">Low Entry Deposit Broker</p>
+                        <div class="my-4 border-b border-white/5 pb-2"></div>
+                        <ul class="space-y-3 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center space-x-2">
+                                <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Deposits Scaled from $1</span>
                             </li>
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>MT4/MT5 Synthetic Options</span>
-                            </li>
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Fast Local Withdrawals</span>
+                            <li class="flex items-center space-x-2">
+                                <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Fast Local Terminal Routes</span>
                             </li>
                         </ul>
                     </div>
-                    <a href="https://track.gowt.me/visit/?bta=69493&brand=weltrade" target="_blank" class="w-full glass text-white hover:bg-white/5 font-semibold py-3.5 rounded-xl text-center transition-all duration-300 block">Open Weltrade Account</a>
+                    <div class="space-y-2">
+                        <button onclick="toggleModal('weltrade-modal')" class="w-full bg-white/5 hover:bg-white/10 text-white text-xs font-semibold py-2.5 rounded-xl text-center border border-white/10 transition-all duration-300">Review Broker Specs</button>
+                        <a href="https://track.gowt.me/visit/?bta=69493&brand=weltrade" target="_blank" class="w-full glass text-white text-xs font-bold py-2.5 rounded-xl text-center transition-all duration-300 block">Open Account</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="deriv-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md animate-fadeIn">
+            <div class="glass w-full max-w-lg rounded-3xl p-6 relative max-h-[90vh] overflow-y-auto">
+                <button onclick="toggleModal('deriv-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg font-bold">&times;</button>
+                <h4 class="heading-font text-2xl font-bold text-white mb-1">Deriv Details</h4>
+                <p class="text-xs text-emerald-400 font-semibold mb-4">The Absolute Standard for Synthetic Index Operations</p>
+                <div class="space-y-4 text-sm text-slate-300 text-left">
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Available Instruments</span>Volatility 75 (VIX), Crash/Boom Models, Step Indices, Jump Chains, and standard Major/Minor Forex Pairs.</div>
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Max Leverage Matrix</span>Up to **1:1000** on financial accounts; Fixed structural multiplier frameworks on market synthetics.</div>
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Minimum Capital Deposit</span>**$5.00 USD** entry limit.</div>
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Zimbabwe Logistics Loops</span>Direct deposits/withdrawals via **Verified Local Payment Agents (EcoCash, InnBucks, Mukuru transfers, ZiG/USD bank pipelines)**, AstroPay, Perfect Money, and native Crypto nodes.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="exness-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+            <div class="glass w-full max-w-lg rounded-3xl p-6 relative max-h-[90vh] overflow-y-auto">
+                <button onclick="toggleModal('exness-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg font-bold">&times;</button>
+                <h4 class="heading-font text-2xl font-bold text-white mb-1">Exness Details</h4>
+                <p class="text-xs text-emerald-400 font-semibold mb-4">High-Liquidity Institutional Infrastructure</p>
+                <div class="space-y-4 text-sm text-slate-300 text-left">
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Available Instruments</span>All Major/Minor FX Crosses, Extensive Precious Metals (Gold/Silver), Crypto Pairs (BTCUSD), Energies, and Global Indices.</div>
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Max Leverage Matrix</span>**Unlimited / 1:2000** dependent on structural margin safety balance scales.</div>
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Minimum Capital Deposit</span>**$10.00 USD** for standard account tiers.</div>
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Zimbabwe Logistics Loops</span>International Visa/Mastercard processing, Perfect Money, Skrill, Neteller, and automated multi-network Crypto pipelines (USDT/BTC).</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="xm-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+            <div class="glass w-full max-w-lg rounded-3xl p-6 relative max-h-[90vh] overflow-y-auto">
+                <button onclick="toggleModal('xm-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg font-bold">&times;</button>
+                <h4 class="heading-font text-2xl font-bold text-white mb-1">XM Details</h4>
+                <p class="text-xs text-emerald-400 font-semibold mb-4">Precision Order Book Allocation</p>
+                <div class="space-y-4 text-sm text-slate-300 text-left">
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Available Instruments</span>55+ Forex Currency Pairs, Precious Metals, Global Equity CFDs, Commodities, and Major Indices.</div>
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Max Leverage Matrix</span>Up to **1:1000** scaling protection.</div>
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Minimum Capital Deposit</span>**$5.00 USD** optimized entry parameters.</div>
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Zimbabwe Logistics Loops</span>Credit/Debit Cards, secure online banking transfers, Neteller, Skrill wallets, and fast-settling cryptographic networks.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="weltrade-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+            <div class="glass w-full max-w-lg rounded-3xl p-6 relative max-h-[90vh] overflow-y-auto">
+                <button onclick="toggleModal('weltrade-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg font-bold">&times;</button>
+                <h4 class="heading-font text-2xl font-bold text-white mb-1">Weltrade Details</h4>
+                <p class="text-xs text-emerald-400 font-semibold mb-4">Flexible Micro-Account Architecture</p>
+                <div class="space-y-4 text-sm text-slate-300 text-left">
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Available Instruments</span>Forex Majors, Crosses, Commodities, Precious Metals, and a dedicated suite of Digital Asset instruments.</div>
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Max Leverage Matrix</span>Up to **1:1000** adaptive execution margins.</div>
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Minimum Capital Deposit</span>**$1.00 USD** ultra-low allocation threshold.</div>
+                    <div class="bg-slate-950/50 p-3 rounded-xl border border-white/5"><span class="font-bold text-white block text-xs uppercase tracking-wider text-slate-400">Zimbabwe Logistics Loops</span>Perfect Money systems, Visa, multi-coin stablecoin crypto routing (USDT TRC20/ERC20), and local digital processing nodes.</div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section id="tools" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -446,6 +492,13 @@
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+        // Broker Modal Display Switcher
+        function toggleModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.toggle('hidden');
+            }
+        }
 
         // Position Sizer Logic
         const balanceInput = document.getElementById('balance');
