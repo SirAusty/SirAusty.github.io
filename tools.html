@@ -3,101 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rebel FX — Utility Portal</title>
+    <title>Rebel FX Utilities — Position Planner & Automation Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0b0f17; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px rgba(255, 255, 255, 0.08) solid; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f17;
+        }
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px rgba(255, 255, 255, 0.05) solid;
+        }
+        .neon-glow {
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.12);
+        }
     </style>
 </head>
-<body class="text-slate-300">
+<body class="text-slate-300 antialiased overflow-x-hidden">
 
-    <nav class="glass border-b border-white/5 p-4">
-        <div class="max-w-4xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold text-white">Rebel<span class="text-emerald-400">FX</span></a>
-            <a href="index.html" class="text-sm text-emerald-400">Back Home</a>
+    <nav class="sticky top-0 z-50 glass border-b border-b-white/5 w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <a href="index.html" class="heading-font text-2xl font-bold text-white tracking-tight">Rebel<span class="text-emerald-400">FX</span></a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html#roadmap" class="hover:text-emerald-400 transition-colors">Roadmap</a>
+                <a href="index.html#brokers" class="hover:text-emerald-400 transition-colors">Brokers</a>
+                <a href="tools.html" class="text-emerald-400 transition-colors">Tools</a>
+                <a href="insights.html" class="hover:text-emerald-400 transition-colors">Insights</a>
+            </div>
+            <div class="hidden md:block">
+                <a href="index.html#roadmap" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-300">Start Journey</a>
+            </div>
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto p-6 mt-10">
-        <h1 class="text-3xl font-bold text-white mb-8">Rebel FX Utility Portal</h1>
+    <header class="relative pt-20 pb-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full">Execution Core</span>
+        <h1 class="heading-font text-4xl sm:text-5xl font-bold text-white tracking-tight mt-4 max-w-3xl mx-auto">
+            Mechanical Utility Portal
+        </h1>
+        <p class="mt-4 text-slate-400 max-w-xl mx-auto text-sm sm:text-base">
+            Calculate your operational liabilities instantly and connect straight to automated journaling pipelines.
+        </p>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 space-y-16">
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="glass p-6 rounded-2xl">
-                <h3 class="text-xl font-bold text-white mb-2">Rebels FX Blueprint</h3>
-                <p class="text-sm text-slate-400 mb-4">Your personal trading journal bot.</p>
-                <a href="https://t.me/projectrebel_bot" target="_blank" class="block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-lg text-center transition-all">Launch Bot</a>
-            </div>
+        <section class="glass p-6 sm:p-10 rounded-3xl relative overflow-hidden neon-glow">
+            <div class="absolute -top-6 -right-6 w-36 h-36 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
             
-            <div class="glass p-6 rounded-2xl">
-                <h3 class="text-xl font-bold text-white mb-2">Sentinel Bot</h3>
-                <p class="text-sm text-slate-400 mb-4">Trade data processing and analysis.</p>
-                <a href="https://t.me/projectrebel_bot" target="_blank" class="block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-lg text-center transition-all">Launch Bot</a>
-                <div class="glass p-6 rounded-2xl mt-8">
-    <h2 class="text-white font-bold text-xl mb-4">Trade Planner & R:R</h2>
-    <div class="space-y-4">
-        <div>
-            <label class="text-xs text-slate-400">Select Asset</label>
-            <select id="assetSelect" class="w-full bg-slate-900 border border-white/10 rounded-lg p-3 text-white">
-                <option value="1">Volatility 75</option>
-                <option value="1">Volatility 75 (1s)</option>
-                <option value="1">Step Index</option>
-                <option value="1">Boom 1000 / Crash 1000</option>
-            </select>
-        </div>
-        <div class="grid grid-cols-2 gap-4">
-            <div>
-                <label class="text-xs text-slate-400">Balance ($)</label>
-                <input id="balance" type="number" class="w-full bg-slate-900 border border-white/10 rounded-lg p-3 text-white" placeholder="100">
-            </div>
-            <div>
-                <label class="text-xs text-slate-400">Risk (%)</label>
-                <input id="risk" type="number" class="w-full bg-slate-900 border border-white/10 rounded-lg p-3 text-white" placeholder="1">
-            </div>
-        </div>
-        <div>
-            <label class="text-xs text-slate-400">Stop Loss in Points</label>
-            <input id="stoploss" type="number" class="w-full bg-slate-900 border border-white/10 rounded-lg p-3 text-white" placeholder="100">
-        </div>
-        
-        <div class="pt-4 border-t border-white/10 space-y-2">
-            <p class="text-sm text-slate-300">Max Loss: <span id="riskAmount" class="text-rose-400 font-bold">$0.00</span></p>
-            <p class="text-sm text-slate-300">Lot Size: <span id="lotSize" class="text-emerald-400 font-bold">0.000</span></p>
-            <div class="grid grid-cols-2 gap-2 pt-2">
-                <div class="bg-emerald-900/20 p-2 rounded border border-emerald-500/20 text-center">
-                    <p class="text-[10px] text-emerald-400 uppercase">TP (1:2)</p>
-                    <p id="tp1" class="text-white font-bold">$0.00</p>
+            <h3 class="heading-font text-xl font-bold text-white mb-8 flex items-center space-x-2">
+                <span class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse"></span>
+                <span>Dynamic Risk Calculator Matrix</span>
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-400 tracking-wider mb-2">Account Balance ($ USD)</label>
+                    <input type="number" id="tool-balance" value="100" min="1" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3.5 text-white text-lg font-medium focus:outline-none focus:border-emerald-400 transition-colors">
                 </div>
-                <div class="bg-emerald-900/20 p-2 rounded border border-emerald-500/20 text-center">
-                    <p class="text-[10px] text-emerald-400 uppercase">TP (1:3)</p>
-                    <p id="tp2" class="text-white font-bold">$0.00</p>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-400 tracking-wider mb-2">Allowed Risk Exposure (%)</label>
+                    <input type="number" id="tool-risk" value="2" min="0.1" max="100" step="0.1" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3.5 text-white text-lg font-medium focus:outline-none focus:border-emerald-400 transition-colors">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-400 tracking-wider mb-2">Stop Loss Buffer (Points / Pips)</label>
+                    <input type="number" id="tool-stoploss" value="20" min="0.1" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3.5 text-white text-lg font-medium focus:outline-none focus:border-emerald-400 transition-colors">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-400 tracking-wider mb-2">Asset Parameter Selection</label>
+                    <select id="tool-asset" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3.5 text-white text-lg font-medium focus:outline-none focus:border-emerald-400 transition-colors">
+                        <option value="forex">Major Currency (EURUSD, GBPUSD, etc)</option>
+                        <option value="vix75">Volatility 75 Index (Deriv Synthetic)</option>
+                    </select>
                 </div>
             </div>
+
+            <div class="bg-slate-950/80 border border-white/5 rounded-2xl p-6 grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+                <div class="border-b sm:border-b-0 sm:border-r border-white/5 pb-4 sm:pb-0 sm:pr-6">
+                    <p class="text-xs uppercase text-slate-400 font-semibold tracking-wider">Absolute Cash Liability</p>
+                    <p class="heading-font text-3xl font-bold text-emerald-400 mt-1" id="tool-riskAmount">$2.00</p>
+                    <p class="text-[10px] text-slate-500 mt-0.5">Maximum absolute drawdown on setup</p>
+                </div>
+                <div class="sm:pl-6">
+                    <p class="text-xs uppercase text-slate-400 font-semibold tracking-wider">Calculated Contract Sizing</p>
+                    <p class="heading-font text-3xl font-bold text-white mt-1" id="tool-lotSize">0.010 lot</p>
+                    <p class="text-[10px] text-slate-500 mt-0.5" id="tool-unitNote">Standard lot variables adjusted for asset allocation</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <div>
+                <h3 class="heading-font text-2xl font-bold text-white">Rebel FX Telegram Architecture</h3>
+                <p class="text-sm text-slate-400">Automated structural processing tools built for instant record-keeping and execution auditing.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass p-6 rounded-2xl border border-white/5 flex flex-col justify-between hover:border-emerald-500/20 transition-all duration-300">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold text-sm mb-4">01</div>
+                        <h4 class="heading-font text-lg font-bold text-white">Rebels FX Blueprint Bot</h4>
+                        <p class="text-xs text-slate-400 mt-1 mb-4">Automated Trade Journaling Node</p>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Instantly record metrics, attach execution screenshots, and map out behavioral metrics directly to your private database loops from Telegram. Eliminates manual log drag completely.
+                        </p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="https://t.me/YOUR_BOT_USERNAME" target="_blank" class="w-full text-center bg-white/5 hover:bg-emerald-500 hover:text-slate-950 border border-white/10 hover:border-transparent text-white text-xs font-bold py-3 rounded-xl transition-all duration-300 block">Launch Logging Node &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="glass p-6 rounded-2xl border border-white/5 opacity-60 flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 font-bold text-sm mb-4">02</div>
+                        <h4 class="heading-font text-lg font-bold text-white">Advanced Risk Gateway</h4>
+                        <p class="text-xs text-slate-500 mt-1 mb-4">Algorithmic Alert Matrix</p>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Under engineering development parameters. Planned framework deployment to send volatility threshold pings and internal structural array change updates.
+                        </p>
+                    </div>
+                    <div class="mt-6">
+                        <button disabled class="w-full text-center bg-white/[0.02] border border-white/5 text-slate-600 text-xs font-medium py-3 rounded-xl cursor-not-allowed block">Node Inactive</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-white/5 py-12 text-xs text-slate-500 bg-slate-950/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <p class="heading-font text-base font-bold text-white mb-2">Rebel<span class="text-emerald-400">FX</span></p>
+                <p>© 2026 Rebel FX Architecture. Universal Rights Retained.</p>
+                <p class="mt-1 text-emerald-400/60 font-medium">Engineered natively within Zimbabwe 🇿🇼</p>
+            </div>
+            <div class="text-left md:text-right text-slate-600 leading-relaxed max-w-md md:ml-auto">
+                <span class="font-semibold text-slate-400 block mb-1 uppercase tracking-wider text-[10px]">High-Risk Matrix Disclosure:</span>
+                Calculated allocations assume standard parameters. Settle verification logic completely before committing live trading balances to market pipelines.
+            </div>
         </div>
-    </div>
-</div>
+    </footer>
 
-<script>
-    const balanceInput = document.getElementById('balance');
-    const riskInput = document.getElementById('risk');
-    const stoplossInput = document.getElementById('stoploss');
-    
-    function calculateTrade() {
-        const balance = parseFloat(balanceInput.value) || 0;
-        const riskPercent = parseFloat(riskInput.value) || 0;
-        const slPoints = parseFloat(stoplossInput.value) || 1;
+    <script>
+        const balanceIn = document.getElementById('tool-balance');
+        const riskIn = document.getElementById('tool-risk');
+        const stoplossIn = document.getElementById('tool-stoploss');
+        const assetIn = document.getElementById('tool-asset');
         
-        const riskAmount = balance * (riskPercent / 100);
-        document.getElementById('riskAmount').textContent = '$' + riskAmount.toFixed(2);
-        
-        const lotSize = riskAmount / slPoints;
-        document.getElementById('lotSize').textContent = Math.max(lotSize, 0.001).toFixed(3);
-        
-        // Calculate Profit Targets
-        document.getElementById('tp1').textContent = '$' + (riskAmount * 2).toFixed(2);
-        document.getElementById('tp2').textContent = '$' + (riskAmount * 3).toFixed(2);
-    }
+        const riskAmountOut = document.getElementById('tool-riskAmount');
+        const lotSizeOut = document.getElementById('tool-lotSize');
+        const unitNoteOut = document.getElementById('tool-unitNote');
 
-    [balanceInput, riskInput, stoplossInput].forEach(el => el.addEventListener('input', calculateTrade));
-</script>
+        function runEngineCalculation() {
+            const balance = parseFloat(balanceIn.value) || 0;
+            const riskPercent = parseFloat(riskIn.value) || 0;
+            const stoploss = parseFloat(stoplossIn.value) || 0.001;
+            const assetType = assetIn.value;
+
+            // Compute pure cash capital allocation risk
+            const cashRisk = balance * (riskPercent / 100);
+            riskAmountOut.textContent = '$' + cashRisk.toFixed(2);
+
+            let preciseLotSize = 0;
+
+            if (assetType === 'forex') {
+                // Currency logic loop ($10 standard lot pip baseline ratio)
+                preciseLotSize = cashRisk / (stoploss * 10);
+                unitNoteOut.textContent = "Standard currency lot metrics ($10 per standard pip alignment)";
+                lotSizeOut.textContent = Math.max(preciseLotSize, 0.01).toFixed(2) + ' lot';
+            } else if (assetType === 'vix75') {
+                // Synthetic index parameter scaling framework
+                preciseLotSize = cashRisk / stoploss;
+                unitNoteOut.textContent = "Deriv Volatility 75 index point weightings (Minimum position floor 0.001)";
+                lotSizeOut.textContent = Math.max(preciseLotSize, 0.001).toFixed(3) + ' lot';
+            }
+        }
+
+        // Event hooks tracking variable alterations
+        [balanceIn, riskIn, stoplossIn, assetIn].forEach(inputNode => {
+            inputNode.addEventListener('input', runEngineCalculation);
+            inputNode.addEventListener('change', runEngineCalculation);
+        });
+
+        // Initialize display execution state instantly
+        runEngineCalculation();
+    </script>
+
+</body>
 </html>
