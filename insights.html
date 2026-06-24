@@ -3,29 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rebel FX Insights — Algorithmic Core Mechanics</title>
+    <title>Rebel FX Academy — The Zero-to-Hero Roadmap</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0b0f17;
-        }
-        .heading-font {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-        .glass {
-            background: rgba(255, 255, 255, 0.02);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px rgba(255, 255, 255, 0.05) solid;
-        }
-        .neon-glow {
-            box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #0b0f17; }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px rgba(255, 255, 255, 0.05) solid; }
+        .progress-glow { box-shadow: 0 0 15px rgba(16, 185, 129, 0.4); }
     </style>
 </head>
 <body class="text-slate-300 antialiased overflow-x-hidden">
@@ -36,210 +21,152 @@
                 <a href="index.html" class="heading-font text-2xl font-bold text-white tracking-tight">Rebel<span class="text-emerald-400">FX</span></a>
             </div>
             <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
-                <a href="index.html#roadmap" class="hover:text-emerald-400 transition-colors">Roadmap</a>
+                <a href="index.html#roadmap" class="hover:text-emerald-400 transition-colors">Start Here</a>
                 <a href="index.html#brokers" class="hover:text-emerald-400 transition-colors">Brokers</a>
-                <a href="tools.html" class="hover:text-emerald-400 transition-colors">Tools</a>
-                <a href="insights.html" class="text-emerald-400 transition-colors">Insights</a>
+                <a href="tools.html" class="hover:text-emerald-400 transition-colors">Risk Tools</a>
+                <a href="insights.html" class="text-emerald-400 transition-colors">Academy</a>
             </div>
             <div class="hidden md:block">
-                <a href="index.html#roadmap" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-300">Start Journey</a>
+                <a href="tools.html" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-sm font-semibold px-4 py-2 rounded-lg transition-all">Launch Tools</a>
             </div>
         </div>
     </nav>
 
-    <header class="relative pt-20 pb-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none"></div>
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full">Core Core Curriculums</span>
-        <h1 class="heading-font text-4xl sm:text-5xl font-bold text-white tracking-tight mt-4 max-w-3xl mx-auto">
-            Operational Intelligence Portal
+    <header class="relative pt-16 pb-10 max-w-4xl mx-auto px-4 text-center">
+        <h1 class="heading-font text-4xl sm:text-5xl font-bold text-white tracking-tight mt-4">
+            The Rebel Roadmap
         </h1>
-        <p class="mt-4 text-slate-400 max-w-xl mx-auto text-sm sm:text-base">
-            Deconstructing the Interbank Price Delivery Algorithm. Isolate structural order flow parameters, internal liquidity cycles, and mechanics without retail retail indicators.
+        <p class="mt-4 text-slate-400 text-base max-w-2xl mx-auto">
+            Step-by-step training from complete beginner to funded trader. No fluff, no confusing jargon—just the reality of how the markets actually move.
         </p>
+
+        <div class="mt-8 glass p-6 rounded-2xl text-left">
+            <div class="flex justify-between items-end mb-2">
+                <span class="text-sm font-semibold text-white uppercase tracking-wider">Your Progress</span>
+                <span id="progress-text" class="text-2xl font-bold text-emerald-400 heading-font">0%</span>
+            </div>
+            <div class="w-full bg-slate-900 rounded-full h-3 border border-white/10 overflow-hidden">
+                <div id="progress-bar" class="bg-emerald-500 h-3 rounded-full w-[0%] transition-all duration-500 progress-glow"></div>
+            </div>
+            <p class="text-xs text-slate-500 mt-3">Read the modules below and click "Mark Complete" to track your journey.</p>
+        </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        
-        <aside class="lg:col-span-3 sticky top-24 hidden lg:block space-y-2">
-            <p class="text-xs font-semibold uppercase text-slate-500 tracking-wider px-3 mb-4">SMC / ICT Curriculum Blocks</p>
-            <a href="#block-structure" class="block text-sm font-medium text-emerald-400 border-l-2 border-emerald-500 px-3 py-2 bg-emerald-500/5 rounded-r-xl transition-all">01. Mechanical Structure</a>
-            <a href="#block-liquidity" class="block text-sm font-medium text-slate-400 hover:text-white border-l-2 border-transparent hover:border-white/20 px-3 py-2 transition-all">02. Liquidity Matrices</a>
-            <a href="#block-inefficiency" class="block text-sm font-medium text-slate-400 hover:text-white border-l-2 border-transparent hover:border-white/20 px-3 py-2 transition-all">03. Order Blocks & FVG</a>
-            <a href="#block-premium" class="block text-sm font-medium text-slate-400 hover:text-white border-l-2 border-transparent hover:border-white/20 px-3 py-2 transition-all">04. Execution Thresholds</a>
-        </aside>
+    <main class="max-w-4xl mx-auto px-4 pb-24 space-y-8">
 
-        <div class="lg:col-span-9 space-y-12">
+        <div class="glass p-6 sm:p-8 rounded-3xl border-t-4 border-t-slate-700">
+            <div class="flex items-center space-x-3 mb-2">
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Phase 1</span>
+            </div>
+            <h2 class="heading-font text-2xl font-bold text-white mb-4">Unlearning the Retail Trap</h2>
+            <p class="text-sm text-slate-400 mb-6">If you trade like the 90% who lose, you become the liquidity (the fuel) for the banks. Let's unlearn the bad habits.</p>
 
-            <section id="block-structure" class="glass rounded-3xl p-6 sm:p-8 relative overflow-hidden">
-                <div class="flex items-center space-x-3 mb-6">
-                    <span class="heading-font text-xs font-bold text-slate-950 bg-emerald-400 px-2.5 py-1 rounded-md">M01</span>
-                    <h2 class="heading-font text-xl sm:text-2xl font-bold text-white">Mechanical Market Structure & Order Flow</h2>
+            <div class="space-y-4">
+                <div class="bg-slate-950/50 p-4 rounded-xl border border-white/5">
+                    <h3 class="text-white font-semibold text-base mb-1">1. Liquidity vs. Support & Resistance</h3>
+                    <p class="text-sm text-slate-400">Retail traders are taught to buy at "Support" lines. Institutions see those lines as clusters of stop-losses ready to be hunted. This is called Liquidity.</p>
                 </div>
-                
-                <p class="text-sm sm:text-base text-slate-400 leading-relaxed mb-6">
-                    Retail traders view structure subjectively through trendlines and chart patterns. The algorithmic delivery engine operates strictly on mechanical structural point calculations. Order flow represents the systemic continuation or shifting of institutional capital frames.
-                </p>
-
-                <div class="border-l-2 border-emerald-500/30 pl-4 my-6 space-y-4">
-                    <div>
-                        <h3 class="text-white font-semibold text-sm sm:text-base flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span> Break of Structure (BOS)
-                        </h3>
-                        <p class="text-xs sm:text-sm text-slate-400 mt-1">
-                            Occurs when the market prints a clear, definitive candle body close in the direction of the dominant macro trend. Minor wick filter breaches do not constitute structural validity.
-                        </p>
-                    </div>
-                    <div>
-                        <h3 class="text-white font-semibold text-sm sm:text-base flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span> Change of Character (CHoCH)
-                        </h3>
-                        <p class="text-xs sm:text-sm text-slate-400 mt-1">
-                            The initial structural signal indicating an order flow reversal sequence. Validated only when the protected swing low/high that engineered the final trending swing point is fully broken by a candle body close.
-                        </p>
-                    </div>
+                <div class="bg-slate-950/50 p-4 rounded-xl border border-white/5">
+                    <h3 class="text-white font-semibold text-base mb-1">2. Candlestick Reality</h3>
+                    <p class="text-sm text-slate-400">Candles aren't just shapes or patterns. They represent real buying and selling pressure. A long wick isn't just a "pin bar," it's a visual rejection of price.</p>
                 </div>
-
-                <blockquote class="bg-slate-950/40 border border-white/5 p-4 rounded-xl text-xs text-slate-400 italic">
-                    <span class="text-emerald-400 font-bold uppercase tracking-wider block text-[10px] not-italic mb-1">Axiom: Protected vs. Targeted Elements</span>
-                    In a bullish trend framework, swing lows are structurally protected by institutional buy orders. If a swing low is breached before a fresh structural high is printed, structural alignment collapses.
-                </blockquote>
-            </section>
-
-
-            <section id="block-liquidity" class="glass rounded-3xl p-6 sm:p-8 relative overflow-hidden">
-                <div class="flex items-center space-x-3 mb-6">
-                    <span class="heading-font text-xs font-bold text-slate-950 bg-emerald-400 px-2.5 py-1 rounded-md">M02</span>
-                    <h2 class="heading-font text-xl sm:text-2xl font-bold text-white">Institutional Liquidity Pools & Sweeps</h2>
-                </div>
-                
-                <p class="text-sm sm:text-base text-slate-400 leading-relaxed mb-6">
-                    The interbank algorithm cannot deploy large-scale capital entries without matching buy or sell orders. Market spikes do not seek patterns; they actively seek clusters of capital exposure (stop losses) to engineer transactions.
-                </p>
-
-                <div class="overflow-x-auto my-6 rounded-xl border border-white/5 bg-slate-950/20">
-                    <table class="w-full text-xs text-left">
-                        <thead class="bg-white/5 text-slate-300 font-semibold uppercase tracking-wider text-[10px] border-b border-white/5">
-                            <tr>
-                                <th class="p-3">Liquidity Definition Type</th>
-                                <th class="p-3">Retail Blindspot Interpretation</th>
-                                <th class="p-3 text-emerald-400">Smart Money Exploitation Mechanics</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-white/5 text-slate-400">
-                            <tr>
-                                <td class="p-3 font-medium text-white">Equal Lows (EQL) / Double Bottom</td>
-                                <td class="p-3">Strong support platform to execute buyers' positions safely.</td>
-                                <td class="p-3 text-slate-300 font-medium">Massive concentration of Sell Stops. Hunted aggressively prior to true expansions.</td>
-                            </tr>
-                            <tr>
-                                <td class="p-3 font-medium text-white">Equal Highs (EQH) / Double Top</td>
-                                <td class="p-3">Strong barrier resistance layout to execute sellers' positions safely.</td>
-                                <td class="p-3 text-slate-300 font-medium">Massive concentration of Buy Stops. Targeted dynamically to absorb retail liquid fuel.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="space-y-4">
-                    <h3 class="text-white font-semibold text-sm sm:text-base heading-font">The Judas Swing Execution Matrix</h3>
-                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                        An intentional, deceptive price run designed to sweep structural liquidity engineering points right at session openings (e.g., London Open or New York Open). The algorithm drives prices violently past previous session parameters, forces retail break-out triggers into traps, captures the liquid flow, and then reverses cleanly back down the primary projection vector.
-                    </p>
-                </div>
-            </section>
-
-
-            <section id="block-inefficiency" class="glass rounded-3xl p-6 sm:p-8 relative overflow-hidden">
-                <div class="flex items-center space-x-3 mb-6">
-                    <span class="heading-font text-xs font-bold text-slate-950 bg-emerald-400 px-2.5 py-1 rounded-md">M03</span>
-                    <h2 class="heading-font text-xl sm:text-2xl font-bold text-white">Order Blocks & Fair Value Gaps (FVG)</h2>
-                </div>
-                
-                <p class="text-sm sm:text-base text-slate-400 leading-relaxed mb-6">
-                    Institutional execution footprints present themselves inside extreme volume changes. We measure these via displacement footprints on high-volatility parameters like the Volatility 75 Index (VIX).
-                </p>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
-                    <div class="bg-slate-950/40 p-4 rounded-xl border border-white/5">
-                        <h4 class="text-white font-semibold text-sm mb-2 heading-The">Institutional Order Block (OB)</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed">
-                            The final structural candle sequence printed right before an explosive structural breakdown or expansion occurs. This zone represents heavy residual institutional buy or sell limits that remain unmitigated. Price returns here to balance the books before continuing.
-                        </p>
-                    </div>
-                    <div class="bg-slate-950/40 p-4 rounded-xl border border-white/5">
-                        <h4 class="text-white font-semibold text-sm mb-2 heading-The">Fair Value Gap (FVG) / Imbalance</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed">
-                            A specific 3-candle structural sequence marking highly inefficient price routing. Validated when Candle 1's wick and Candle 3's wick fail to touch, leaving an explicit structural window of pure single-sided delivery. The algorithm naturally repairs this void.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bg-emerald-500/5 border border-emerald-500/10 p-4 rounded-xl">
-                    <h4 class="text-xs uppercase tracking-wider text-emerald-400 font-bold mb-2">Mechanical Check: Mitigation Sequence Validation</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">
-                        An order block loses structural execution probability every time its 50% equilibrium threshold (Mean Threshold) is completely pierced by body closures. Isolate fresh, unmitigated footprints for absolute sniper executions.
-                    </p>
-                </div>
-            </section>
-
-
-            <section id="block-premium" class="glass rounded-3xl p-6 sm:p-8 relative overflow-hidden">
-                <div class="flex items-center space-x-3 mb-6">
-                    <span class="heading-font text-xs font-bold text-slate-950 bg-emerald-400 px-2.5 py-1 rounded-md">M04</span>
-                    <h2 class="heading-font text-xl sm:text-2xl font-bold text-white">Premium vs. Discount Execution Thresholds</h2>
-                </div>
-                
-                <p class="text-sm sm:text-base text-slate-400 leading-relaxed mb-6">
-                    Executing entries without calculating macro price positioning ranges is mathematically destructive. Institutions aim to buy inventory at cheap prices and offload it at high premiums.
-                </p>
-
-                <div class="space-y-4 text-xs sm:text-sm">
-                    <div class="flex items-start space-x-3">
-                        <div class="w-6 h-6 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center shrink-0 font-bold text-xs">>50%</div>
-                        <div>
-                            <span class="font-bold text-white block">Premium Array Configuration</span>
-                            Prices sitting comfortably above the 50% equilibrium mark of the major dealing swing range. **Strictly execute Short configurations only.** Buying here is chasing late retail momentum.
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-3">
-                        <div class="w-6 h-6 rounded-lg bg-white/5 border border-white/10 text-slate-400 flex items-center justify-center shrink-0 font-bold text-xs">50%</div>
-                        <div>
-                            <span class="font-bold text-white block">Equilibrium Grid Baseline</span>
-                            The absolute fair-value point of the dealing swing. High-risk execution noise occurs heavily along this coordinate block. Neutral zone parameters apply.
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-3">
-                        <div class="w-6 h-6 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 font-bold text-xs"><50%</div>
-                        <div>
-                            <span class="font-bold text-white block">Discount Array Configuration</span>
-                            Prices sitting comfortably beneath the 50% equilibrium mark of the major dealing swing range. **Strictly isolate Long entry configurations only.**
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-8 pt-6 border-t border-white/5 text-center">
-                    <p class="text-sm text-slate-400 mb-4">Ready to perform raw mathematical risk projections on these setups?</p>
-                    <a href="tools.html" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs px-6 py-3 rounded-xl transition-all inline-block">Launch Position Sizer Portal &rarr;</a>
-                </div>
-            </section>
-
+            </div>
+            <button onclick="updateProgress(1, 33)" id="btn-1" class="mt-6 w-full sm:w-auto bg-slate-800 hover:bg-emerald-500 hover:text-slate-950 text-white text-sm font-semibold py-2.5 px-6 rounded-lg transition-all border border-white/10 hover:border-transparent">Mark Phase 1 Complete ✅</button>
         </div>
+
+        <div class="glass p-6 sm:p-8 rounded-3xl border-t-4 border-t-emerald-500/50">
+            <div class="flex items-center space-x-3 mb-2">
+                <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Phase 2</span>
+            </div>
+            <h2 class="heading-font text-2xl font-bold text-white mb-4">The Smart Money Edge (SMC)</h2>
+            <p class="text-sm text-slate-400 mb-6">Now we learn how the algorithm actually delivers price. You will learn the exact terminology professionals use to track the market.</p>
+
+            <div class="space-y-4">
+                <div class="bg-slate-950/50 p-4 rounded-xl border border-white/5">
+                    <h3 class="text-white font-semibold text-base mb-1 flex items-center gap-2">Market Structure (BOS & CHoCH)</h3>
+                    <p class="text-sm text-slate-400">A <strong>Break of Structure (BOS)</strong> means the trend is continuing safely. A <strong>Change of Character (CHoCH)</strong> is your first warning sign that the trend is reversing.</p>
+                </div>
+                <div class="bg-slate-950/50 p-4 rounded-xl border border-white/5">
+                    <h3 class="text-white font-semibold text-base mb-1 flex items-center gap-2">Fair Value Gaps (FVG)</h3>
+                    <p class="text-sm text-slate-400">When the market moves too fast, it leaves an empty space called an Imbalance or FVG. Price almost always acts like a magnet, coming back to fill this gap before continuing.</p>
+                </div>
+                <div class="bg-slate-950/50 p-4 rounded-xl border border-white/5">
+                    <h3 class="text-white font-semibold text-base mb-1 flex items-center gap-2">The Judas Swing</h3>
+                    <p class="text-sm text-slate-400">A fake move engineered right when a major trading session opens (like London or New York). It tricks early traders into the wrong direction before the real move happens.</p>
+                </div>
+            </div>
+            <button onclick="updateProgress(2, 66)" id="btn-2" class="mt-6 w-full sm:w-auto bg-slate-800 hover:bg-emerald-500 hover:text-slate-950 text-white text-sm font-semibold py-2.5 px-6 rounded-lg transition-all border border-white/10 hover:border-transparent">Mark Phase 2 Complete ✅</button>
+        </div>
+
+        <div class="glass p-6 sm:p-8 rounded-3xl border-t-4 border-t-slate-700">
+            <div class="flex items-center space-x-3 mb-2">
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Phase 3</span>
+            </div>
+            <h2 class="heading-font text-2xl font-bold text-white mb-4">Risk & Execution Setup</h2>
+            <p class="text-sm text-slate-400 mb-6">A good strategy without risk management will still blow your account. This is how you protect your capital like a casino protects its vault.</p>
+
+            <div class="space-y-4">
+                <div class="bg-slate-950/50 p-4 rounded-xl border border-white/5">
+                    <h3 class="text-white font-semibold text-base mb-1">Risk of Ruin</h3>
+                    <p class="text-sm text-slate-400">If you risk 10% per trade, you only need 10 losses to lose everything. If you risk 1%, you need 100 losses in a row. Math is your best defense.</p>
+                </div>
+                <div class="bg-slate-950/50 p-4 rounded-xl border border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div>
+                        <h3 class="text-white font-semibold text-base mb-1">The Position Calculator</h3>
+                        <p class="text-sm text-slate-400">Never guess your lot size. Use our built-in tool to instantly calculate the exact position size based on your account balance.</p>
+                    </div>
+                    <a href="tools.html" class="bg-white/10 hover:bg-white/20 text-white text-xs px-4 py-2 rounded-lg whitespace-nowrap transition-colors border border-white/10">Open Calculator</a>
+                </div>
+            </div>
+            <button onclick="updateProgress(3, 100)" id="btn-3" class="mt-6 w-full sm:w-auto bg-slate-800 hover:bg-emerald-500 hover:text-slate-950 text-white text-sm font-semibold py-2.5 px-6 rounded-lg transition-all border border-white/10 hover:border-transparent">Mark Phase 3 Complete ✅</button>
+        </div>
+
     </main>
 
-    <footer class="border-t border-white/5 py-12 text-xs text-slate-500 bg-slate-950/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-                <p class="heading-font text-base font-bold text-white mb-2">Rebel<span class="text-emerald-400">FX</span></p>
-                <p>© 2026 Rebel FX Architecture. Universal Rights Retained.</p>
-                <p class="mt-1 text-emerald-400/60 font-medium">Engineered natively within Zimbabwe 🇿🇼</p>
-            </div>
-            <div class="text-left md:text-right text-slate-600 leading-relaxed max-w-md md:ml-auto">
-                <span class="font-semibold text-slate-400 block mb-1 uppercase tracking-wider text-[10px]">High-Risk Matrix Disclosure:</span>
-                Trading secondary index contracts, leveraged financial derivatives, and volatility options markers carries high exposure liabilities. Settle verification procedures completely prior to processing live entries.
-            </div>
-        </div>
+    <footer class="border-t border-white/5 py-8 text-xs text-slate-500 bg-slate-950/20 text-center">
+        <p class="heading-font text-base font-bold text-white mb-1">Rebel<span class="text-emerald-400">FX</span></p>
+        <p>© 2026 Rebel FX. Learn safely, trade smartly.</p>
     </footer>
 
+    <script>
+        // Check for saved progress when page loads
+        let currentProgress = localStorage.getItem('rebelProgress') || 0;
+        let completedPhases = JSON.parse(localStorage.getItem('rebelPhases')) || [];
+        
+        const bar = document.getElementById('progress-bar');
+        const text = document.getElementById('progress-text');
+
+        function visuallyUpdate() {
+            bar.style.width = currentProgress + '%';
+            text.textContent = currentProgress + '%';
+            
+            // Turn completed buttons green
+            completedPhases.forEach(phaseNum => {
+                const btn = document.getElementById('btn-' + phaseNum);
+                if(btn) {
+                    btn.classList.remove('bg-slate-800', 'text-white');
+                    btn.classList.add('bg-emerald-500', 'text-slate-950');
+                    btn.textContent = `Phase ${phaseNum} Completed ✅`;
+                    btn.disabled = true;
+                }
+            });
+        }
+
+        function updateProgress(phaseNum, percentage) {
+            if(!completedPhases.includes(phaseNum)) {
+                completedPhases.push(phaseNum);
+                currentProgress = percentage;
+                
+                localStorage.setItem('rebelProgress', currentProgress);
+                localStorage.setItem('rebelPhases', JSON.stringify(completedPhases));
+                
+                visuallyUpdate();
+            }
+        }
+
+        // Run on load
+        visuallyUpdate();
+    </script>
 </body>
 </html>
 
